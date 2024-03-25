@@ -9,7 +9,7 @@ import (
 	"sync"
   "strings"
 )
-
+// MAKE METHODS PUBLIC
 // Credentials represents authentication credentials for API requests.
 type Credentials struct {
 	APIKey string
