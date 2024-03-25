@@ -16,7 +16,7 @@ type Credentials struct {
 }
 
 // fetchData fetches data from the given URL using HTTP GET request with provided API key.
-func fetchData(url string, credentials Credentials, wg *sync.WaitGroup) (interface{}, error) {
+func FetchData(url string, credentials Credentials, wg *sync.WaitGroup) (interface{}, error) {
 	defer wg.Done()
 
 	req, err := http.NewRequest("GET", url, nil)
